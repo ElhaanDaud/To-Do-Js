@@ -13,7 +13,7 @@ function cycleImages(index) {
     const interval = setInterval(() => {
         count++;
         console.log(count + " seconds elapsed");
-        if(count%60===0){
+        if(count%6===0){ //every 60 sec pic changes
             document.body.style.backgroundImage = images[index];
             index = (index + 1) % images.length;
         }
@@ -21,4 +21,4 @@ function cycleImages(index) {
     }, 1000); // Runs every second (1000 milliseconds)
 }
 
-cycleImages(1);
+//cycleImages(1);

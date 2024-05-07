@@ -30,12 +30,39 @@
   }*/
 
 body{
-    animation: fadeIn ease 10s;
+    animation: fadeIn 5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    
-    background-image: url('images/bg1.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover; /*100% 100% or cover*/
+} 
+
+.container{
+  background-image: url('images/bg1.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}/*100% 100% or cover*/
+
+.todoList{
+  width: 90%;
+  max-width: 470px;
+  background: #673217;
+  opacity: 50%;
+  color: #fff;
+  margin: 30vh auto 0;
+  border-radius: 20px;
+  padding: 40px 35px;
+  text-align: center;
+
 }
+
+#h5{
+  opacity: 100%;
+}
+
+.addBtn{
+  opacity: 100%;
+}
+
