@@ -13,7 +13,7 @@ function cycleImages(index) {
     const interval = setInterval(() => {
         count++;
         console.log(count + " seconds elapsed");
-        if(count%3===0){
+        if(count%60===0){
             document.body.style.backgroundImage = images[index];
             index = (index + 1) % images.length;
         }
