@@ -13,7 +13,7 @@ const listContainer = document.getElementById('list-container');
 
 container.style.backgroundImage=images[0]
 
-function cycleImages(index) {
+/*function cycleImages(index) {
     let count = 0;
     const interval = setInterval(() => {
         count++;
@@ -30,19 +30,18 @@ function cycleImages(index) {
     }, 1000); // Runs every second (1000 milliseconds)
 }
 
-//cycleImages(1);
+//cycleImages(1);*/
 
-function addTask(task) {
+function addTask() {
     if(inputBox.value===""){
         alert("You must write something")
     }
     else{
-        let li= document.createElement("li")
-        li.innerHTML=inputBox.value
-        listContainer.appendChild(li)
+        let li= document.createElement("li");
+        li.innerHTML=inputBox.value;
+        listContainer.appendChild(li);
     }
+    inputBox.value=""
 }
-
-
 
 
