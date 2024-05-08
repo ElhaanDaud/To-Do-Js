@@ -10,13 +10,18 @@
     <div class="container">
         <div class="todoListBox">
             <form>
-                <h3>To Do List 📝</h3>
-                <div class="add" id="todoList">
-                    <input type="text" placeholder="Add Your Task" name="add" spellcheck="false">
-                    <button class="addBtn">
+                <h3>To Do List <img src="images/icon.png"></h3>
+                <div class="row" id="todoList">
+                    <input type="text" placeholder="Add Your Task" spellcheck="false" id="input-box" >
+                    <button onclick="addTask()" class="addBtn">
                         ADD
                     </button>
                 </div>
+                <ul id="list-container">
+                    <!-- <li class="checked">Task 1</li>
+                    <li>Task 2</li>
+                    <li>Task 3</li> -->
+                </ul>
             </form>
         </div>
     </div>

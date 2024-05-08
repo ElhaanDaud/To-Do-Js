@@ -47,19 +47,18 @@ body{
   align-items: center;
   justify-content: center;
   height: 100vh;
+  padding: 10px;
 }/*100% 100% or cover*/   
 
 
 .todoListBox{
   width: 100%;
-  max-width: 470px;
+  max-width: 540px;
   background: rgb(103, 50, 23,0.5);
-
   color: #fff;
-  
-  height: 1000vh auto;
+  height: auto;
   border-radius: 50px;
-  padding: 40px 35px;
+  padding: 40px 30px 70px;
   text-align: center;
 
 }
@@ -87,11 +86,20 @@ body{
   color: #fff;
 }
 
-.add input{
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(255, 255, 255);
+  border-radius: 50px;
+  margin-bottom: 25px;
+}
+
+.row input{
   align-items: start;
   border: 0;
   outline: 0;
-  background: #ebfffc;
+  background: transparent;
   color: #555;
   padding: 10px 25px;
   height: 45px;
@@ -106,9 +114,57 @@ body{
 .todoListBox h3{
   font-family: monospace;
   font-size: 20px;
-  font-weight: 400;
-  margin-top: -10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.todoListBox h3 img{
+  width: 30px;
+  margin-left: 10px;
+  
+}
+
+ul li{
+  list-style: none;
+  font-size: 15px;
   text-align: left;
-  padding-bottom: 2vh;
-  align-items: flex-start;
+  padding: 12px 8px 12px 45px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 10px;
+  /*background-color: #000;*/
+  border-radius: 100px;
+}
+
+ul li::before{
+  content:'';
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url(images/unchecked.png);
+  background-size: cover;
+  background-position: center;
+  top: 8px;
+  left: 8px;
+}
+
+ul li.checked{
+  color: #00f7ff;
+  text-decoration: line-through;
+}
+
+ul li.checked::before{
+  content:'';
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url(images/checked.png);
+  background-size: cover;
+  background-position: center;
+  top: 8px;
+  left: 8px;
 }
