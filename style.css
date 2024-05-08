@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: "Poppins", sans-serif;
     box-sizing: border-box;
 }
 
@@ -30,39 +31,84 @@
   }*/
 
 body{
-    animation: fadeIn 5s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+    background: #fff;
+    height: 100%;
 } 
 
 .container{
   background-image: url('images/bg1.jpg');
+  /*animation: fadeIn 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;*/
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
-}/*100% 100% or cover*/
+  height: 100vh;
+}/*100% 100% or cover*/   
 
-.todoList{
-  width: 90%;
+
+.todoListBox{
+  width: 100%;
   max-width: 470px;
-  background: #673217;
-  opacity: 50%;
+  background: rgb(103, 50, 23,0.5);
+
   color: #fff;
-  margin: 30vh auto 0;
-  border-radius: 20px;
+  
+  height: 1000vh auto;
+  border-radius: 50px;
   padding: 40px 35px;
   text-align: center;
 
 }
 
-#h5{
-  opacity: 100%;
-}
-
 .addBtn{
-  opacity: 100%;
+  border: 0;
+  outline: 0;
+  font-family: monospace;
+  background-color: rgb(240, 136, 0);
+  color: #ffffff;
+  border: none;
+  border-radius: 50px;
+  width: 100px;
+  height: 45px;
+  cursor: pointer;
+  transition: .3s;
+  position: relative;
+  /*left: -30%;  Adjust this value to control the overlap */
+  /*z-index: 1;  Ensure the button stays on top of the input */
 }
 
+.addBtn:hover{
+  background-color: #fd0000;
+  
+  color: #fff;
+}
+
+.add input{
+  align-items: start;
+  border: 0;
+  outline: 0;
+  background: #ebfffc;
+  color: #555;
+  padding: 10px 25px;
+  height: 45px;
+  border-radius: 50px;
+  flex: 1;
+  width: 69%;
+  font-size: 14px;
+  /*position: relative;  Ensure the input remains in the normal flow */
+ /* z-index: 0;  Ensure the input stays behind the button */
+}
+
+.todoListBox h3{
+  font-family: monospace;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: -10px;
+  text-align: left;
+  padding-bottom: 2vh;
+  align-items: flex-start;
+}
