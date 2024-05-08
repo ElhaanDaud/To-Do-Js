@@ -67,7 +67,7 @@ body{
   outline: 0;
   font-family: monospace;
   background-color: rgb(240, 136, 0);
-  color: #ffffff;
+  color: #000;
   border: none;
   border-radius: 50px;
   width: 100px;
@@ -99,7 +99,7 @@ body{
   border: 0;
   outline: 0;
   background: transparent;
-  color: #ffffff;
+  color: #000000;
   padding: 10px 25px;
   height: 45px;
   border-radius: 50px;
