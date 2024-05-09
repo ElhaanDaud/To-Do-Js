@@ -67,7 +67,7 @@ body{
   outline: 0;
   font-family: monospace;
   background-color: rgb(240, 136, 0);
-  color: #000;
+  color: #ffffff;
   border: none;
   border-radius: 50px;
   width: 100px;
@@ -80,7 +80,7 @@ body{
 }
 
 .addBtn:hover{
-  background-color: #fd0000;
+  background-color: #9e3f00;
   
   color: #fff;
 }
@@ -133,15 +133,15 @@ ul li{
   cursor: pointer;
   position: relative;
   margin-bottom: 10px;
-  /*background-color: #000;*/
+  background-color:  rgba(226, 152, 117, 0.5);/**/
   border-radius: 100px;
 }
 
 ul li::before{
   content:'';
   position: absolute;
-  height: 28px;
-  width: 28px;
+  height: 26px;
+  width: 26px;
   border-radius: 50%;
   background-image: url(images/unchecked.png);
   background-size: cover;
@@ -158,8 +158,9 @@ ul li.checked{
 ul li.checked::before{
   content:'';
   position: absolute;
-  height: 28px;
-  width: 28px;
+  
+  height: 26px;
+  width: 26px;
   border-radius: 50%;
   background-image: url(images/checked.png);
   background-size: cover;

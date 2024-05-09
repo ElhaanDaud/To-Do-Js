@@ -30,7 +30,7 @@ container.style.backgroundImage=images[0]
     }, 1000); // Runs every second (1000 milliseconds)
 }
 
-//cycleImages(1);*/
+//cycleImages(1);
 
 function addTask() {
     if(inputBox.value===""){
@@ -42,6 +42,22 @@ function addTask() {
         listContainer.appendChild(li);
     }
     inputBox.value=""
+}*/
+
+
+function addTask() {
+    event.preventDefault();
+    const inputBox = document.getElementById('input-box');
+    const task = inputBox.value.trim(); // Trim to remove leading and trailing whitespace
+
+    if (task === '') {
+        alert('You must write something');
+        return;
+    }
+
+    let li= document.createElement("li");
+    li.innerHTML=inputBox.value;
+    listContainer.appendChild(li);
+
+    inputBox.value = ''; // Clear the input field
 }
-
-
