@@ -133,7 +133,7 @@ ul li{
   cursor: pointer;
   position: relative;
   margin-bottom: 10px;
-  background-color:  rgba(226, 152, 117, 0.5);/**/
+  background-color:  rgba(226, 152, 117, 0.7);/**/
   border-radius: 100px;
 }
 
@@ -167,4 +167,22 @@ ul li.checked::before{
   background-position: center;
   top: 8px;
   left: 8px;
+}
+
+
+ul li span{
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  height: 26px;
+  width: 26px;
+  font-size: 22px;
+  color: #ffffff;
+  text-align: center;
+  border-radius:50% ;
+}
+
+ul li span:hover{
+  background: #9e5c2f;
+  
 }
