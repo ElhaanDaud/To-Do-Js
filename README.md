@@ -48,5 +48,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Acknowledgements
 
 - Background images sourced from [Unsplash](https://unsplash.com).
-- Icons used in the application are provided by [FontAwesome](https://fontawesome.com)
+- Icons used in the application are provided by [FontAwesome](https://fontawesome.com).
 
