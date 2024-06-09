@@ -67,19 +67,9 @@ function blueImage(){
     }, 1000); // Runs every second (1000 milliseconds)
 }
 
-//cycleImages(1);
+cycleImages(1);*/
 
-function addTask() {
-    if(inputBox.value===""){
-        alert("You must write something")
-    }
-    else{
-        let li= document.createElement("li");
-        li.innerHTML=inputBox.value;
-        listContainer.appendChild(li);
-    }
-    inputBox.value=""
-}*/
+
 function preloadImages() {
 	for (let i = 0; i < images.length; i++) {
 		const img = new Image();
