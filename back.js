@@ -35,18 +35,21 @@ function redImage(){
     container.style.backgroundImage=images[0];
     todoListBox.style.backgroundColor=todoColor[0];
     //ul_li.style.backgroundColor=taskColor[0];
+    saveData();
 }
 
 function greenImage(){
     container.style.backgroundImage=images[1];
     todoListBox.style.backgroundColor=todoColor[1];
     //ul_li.style.backgroundColor=taskColor[1];
+    saveData();
 
 }
 function blueImage(){
     container.style.backgroundImage=images[2];
     todoListBox.style.backgroundColor=todoColor[2];
    // ul_li.style.backgroundColor=taskColor[2];
+   saveData();
 }
 
 
